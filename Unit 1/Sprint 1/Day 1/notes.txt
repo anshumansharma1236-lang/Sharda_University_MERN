@@ -1,3 +1,5 @@
+CLI In Class Practice Examples:
+------------------------------
 
 C:\Users\perse>dir
  Volume in drive C is OS
@@ -453,26 +455,10 @@ K:\>dir
 
  Directory of K:\
 
-05/02/2026  10:49 AM     3,227,622,796 CGME6248.MP4
-04/08/2026  12:26 PM             6,716 Clash_Free_8_to_10.xlsx
-04/07/2026  11:03 PM             1,871 Class 7th import to 8th.csv
-04/07/2026  11:37 PM             1,829 Class 8th for import to 9th.csv
-04/08/2026  11:18 AM             8,325 Class_6_to_10_Timetable for edit.xlsx
-04/09/2026  10:37 AM             5,494 correction Fee_Structure.xlsx
-03/21/2024  12:58 PM    <DIR>          Full Stack Content
-04/07/2026  12:20 PM       222,617,307 hp_laserjet_pro_m1136_aio_5_0_driver.zip
-04/07/2026  12:33 PM       252,413,888 HP_M1130_M1210_MFP_Full_Solution-v20180815-10158769_1.exe
-04/07/2026  10:14 PM             2,000 IMPORT Class 7th.csv
-01/30/2026  03:27 PM    <DIR>          Mern Stack Learning
-04/08/2026  11:17 AM             5,163 New sample timetable class 7th to be upgraded.xlsx
-07/20/2025  04:20 PM    <DIR>          Personal
-01/05/2026  07:34 PM    <DIR>          Product
-04/08/2026  02:17 PM            49,881 Sample for New timetable 6th to 10th.pdf
+
 06/04/2026  03:06 PM    <DIR>          Sharda University
-08/06/2025  10:31 AM    <DIR>          Shri Sanskritik Kala Manch
-06/01/2026  03:09 PM    <DIR>          SSP School Data
-              11 File(s)  3,702,735,270 bytes
-               7 Dir(s)  22,499,762,176 bytes free
+              0 File(s)  3,702,735,270 bytes
+               1 Dir(s)  22,499,762,176 bytes free
 
 K:\>mkdir Sharda_University
 
@@ -482,27 +468,11 @@ K:\>dir
 
  Directory of K:\
 
-05/02/2026  10:49 AM     3,227,622,796 CGME6248.MP4
-04/08/2026  12:26 PM             6,716 Clash_Free_8_to_10.xlsx
-04/07/2026  11:03 PM             1,871 Class 7th import to 8th.csv
-04/07/2026  11:37 PM             1,829 Class 8th for import to 9th.csv
-04/08/2026  11:18 AM             8,325 Class_6_to_10_Timetable for edit.xlsx
-04/09/2026  10:37 AM             5,494 correction Fee_Structure.xlsx
-03/21/2024  12:58 PM    <DIR>          Full Stack Content
-04/07/2026  12:20 PM       222,617,307 hp_laserjet_pro_m1136_aio_5_0_driver.zip
-04/07/2026  12:33 PM       252,413,888 HP_M1130_M1210_MFP_Full_Solution-v20180815-10158769_1.exe
-04/07/2026  10:14 PM             2,000 IMPORT Class 7th.csv
-01/30/2026  03:27 PM    <DIR>          Mern Stack Learning
-04/08/2026  11:17 AM             5,163 New sample timetable class 7th to be upgraded.xlsx
-07/20/2025  04:20 PM    <DIR>          Personal
-01/05/2026  07:34 PM    <DIR>          Product
-04/08/2026  02:17 PM            49,881 Sample for New timetable 6th to 10th.pdf
-06/04/2026  03:06 PM    <DIR>          Sharda University
+
 06/04/2026  03:07 PM    <DIR>          Sharda_University
-08/06/2025  10:31 AM    <DIR>          Shri Sanskritik Kala Manch
-06/01/2026  03:09 PM    <DIR>          SSP School Data
-              11 File(s)  3,702,735,270 bytes
-               8 Dir(s)  22,499,758,080 bytes free
+06/04/2026  03:06 PM    <DIR>          Sharda University
+              0 File(s)  3,702,735,270 bytes
+               2 Dir(s)  22,499,758,080 bytes free
 
 K:\>rmdir Sharda_University
 
@@ -512,26 +482,9 @@ K:\>dir
 
  Directory of K:\
 
-05/02/2026  10:49 AM     3,227,622,796 CGME6248.MP4
-04/08/2026  12:26 PM             6,716 Clash_Free_8_to_10.xlsx
-04/07/2026  11:03 PM             1,871 Class 7th import to 8th.csv
-04/07/2026  11:37 PM             1,829 Class 8th for import to 9th.csv
-04/08/2026  11:18 AM             8,325 Class_6_to_10_Timetable for edit.xlsx
-04/09/2026  10:37 AM             5,494 correction Fee_Structure.xlsx
-03/21/2024  12:58 PM    <DIR>          Full Stack Content
-04/07/2026  12:20 PM       222,617,307 hp_laserjet_pro_m1136_aio_5_0_driver.zip
-04/07/2026  12:33 PM       252,413,888 HP_M1130_M1210_MFP_Full_Solution-v20180815-10158769_1.exe
-04/07/2026  10:14 PM             2,000 IMPORT Class 7th.csv
-01/30/2026  03:27 PM    <DIR>          Mern Stack Learning
-04/08/2026  11:17 AM             5,163 New sample timetable class 7th to be upgraded.xlsx
-07/20/2025  04:20 PM    <DIR>          Personal
-01/05/2026  07:34 PM    <DIR>          Product
-04/08/2026  02:17 PM            49,881 Sample for New timetable 6th to 10th.pdf
 06/04/2026  03:06 PM    <DIR>          Sharda University
-08/06/2025  10:31 AM    <DIR>          Shri Sanskritik Kala Manch
-06/01/2026  03:09 PM    <DIR>          SSP School Data
-              11 File(s)  3,702,735,270 bytes
-               7 Dir(s)  22,499,758,080 bytes free
+              0 File(s)  3,702,735,270 bytes
+               1 Dir(s)  22,499,758,080 bytes free
 
 K:\>cd Sharda University
 
