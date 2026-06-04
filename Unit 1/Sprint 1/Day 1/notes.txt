@@ -1,0 +1,608 @@
+
+C:\Users\perse>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse
+
+06/03/2026  11:26 AM    <DIR>          .
+01/05/2025  09:54 PM    <DIR>          ..
+01/04/2025  12:25 PM             6,579 -1.14-windows.xml
+02/19/2025  08:05 PM    <DIR>          .android
+01/19/2026  02:35 PM    <DIR>          .arduinoIDE
+05/29/2026  10:35 AM    <DIR>          .aws
+03/21/2025  11:58 AM             4,665 .bash_history
+09/06/2024  05:02 PM            21,908 .boto
+05/22/2024  03:35 PM    <DIR>          .cache
+05/11/2024  03:54 PM    <DIR>          .config
+06/03/2026  11:10 AM    <DIR>          .copilot
+12/21/2023  12:22 PM    <DIR>          .eclipse
+08/24/2025  12:00 AM                20 .erlang.cookie
+06/03/2026  11:19 AM               108 .gitconfig
+03/21/2025  11:37 AM                 0 .gitignore
+09/06/2024  05:09 PM    <DIR>          .gsutil
+12/29/2025  05:26 AM    <DIR>          .icube-remote-ssh
+12/15/2024  10:31 PM    <DIR>          .ipython
+05/29/2026  10:28 AM    <DIR>          .kiro
+06/03/2026  02:42 AM                20 .lesshst
+01/01/2024  11:34 AM    <DIR>          .m2
+02/11/2024  05:10 PM    <DIR>          .ms-ad
+02/27/2024  05:05 PM               356 .node_repl_history
+06/03/2026  11:27 AM                77 .npmrc
+01/11/2026  10:51 AM    <DIR>          .redis-for-vscode
+02/22/2024  05:17 PM    <DIR>          .ssh
+12/21/2023  12:28 PM    <DIR>          .sts4
+12/29/2025  05:25 AM    <DIR>          .trae
+01/01/2026  06:41 PM    <DIR>          .trae-aicc
+08/25/2025  03:35 PM             1,144 .viminfo
+12/21/2023  01:47 PM    <DIR>          .vscode
+05/31/2026  01:46 PM    <DIR>          .vscode-shared
+12/29/2025  05:26 AM    <DIR>          ai_completion
+01/07/2025  10:45 PM    <DIR>          Contacts
+01/19/2024  01:31 PM                13 demo.txt
+12/21/2023  01:56 PM    <DIR>          Documents
+06/04/2026  09:24 AM    <DIR>          Downloads
+01/07/2025  10:45 PM    <DIR>          Favorites
+06/01/2026  10:48 PM    <DIR>          IdeaProjects
+01/07/2025  10:45 PM    <DIR>          Links
+04/21/2026  10:29 AM    <DIR>          Music
+05/17/2024  09:02 AM    <DIR>          npm-cache
+12/23/2025  07:26 PM    <DIR>          OneDrive
+12/21/2023  07:12 PM    <DIR>          Postman
+01/07/2025  10:45 PM    <DIR>          Saved Games
+01/07/2025  10:45 PM    <DIR>          Searches
+08/22/2025  07:10 PM    <DIR>          Videos
+              11 File(s)         34,890 bytes
+              36 Dir(s)  100,711,538,688 bytes free
+
+C:\Users\perse>cd Documents
+
+C:\Users\perse\Documents>cd ..
+
+C:\Users\perse>cd Downloads
+
+C:\Users\perse\Downloads>cd practice
+
+C:\Users\perse\Downloads\practice>cd ..\..
+
+C:\Users\perse>cd Downloads\practice
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  01:22 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  100,700,110,848 bytes free
+
+C:\Users\perse\Downloads\practice>mkdir folder1
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:20 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:20 PM    <DIR>          folder1
+               0 File(s)              0 bytes
+               3 Dir(s)  100,696,788,992 bytes free
+
+C:\Users\perse\Downloads\practice>mkdir folder2 folder3
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:21 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:20 PM    <DIR>          folder1
+06/04/2026  02:21 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               5 Dir(s)  100,696,252,416 bytes free
+
+C:\Users\perse\Downloads\practice>cd folder1
+
+C:\Users\perse\Downloads\practice\folder1>cd ..
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:21 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:20 PM    <DIR>          folder1
+06/04/2026  02:21 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               5 Dir(s)  100,696,252,416 bytes free
+
+C:\Users\perse\Downloads\practice>cd folder1
+
+C:\Users\perse\Downloads\practice\folder1>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder1
+
+06/04/2026  02:20 PM    <DIR>          .
+06/04/2026  02:21 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  100,694,302,720 bytes free
+
+C:\Users\perse\Downloads\practice\folder1>echo "welcome to mern stack"
+"welcome to mern stack"
+
+C:\Users\perse\Downloads\practice\folder1>echo welcome
+welcome
+
+C:\Users\perse\Downloads\practice\folder1>echo Welcome >> notes.txt
+
+C:\Users\perse\Downloads\practice\folder1>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\perse\Downloads\practice\folder1>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder1
+
+06/04/2026  02:29 PM    <DIR>          .
+06/04/2026  02:21 PM    <DIR>          ..
+06/04/2026  02:29 PM                10 notes.txt
+               1 File(s)             10 bytes
+               2 Dir(s)  100,694,188,032 bytes free
+
+C:\Users\perse\Downloads\practice\folder1>notes.txt
+
+C:\Users\perse\Downloads\practice\folder1>notepad notes.txt
+
+C:\Users\perse\Downloads\practice\folder1>del notes.txt
+
+C:\Users\perse\Downloads\practice\folder1>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder1
+
+06/04/2026  02:37 PM    <DIR>          .
+06/04/2026  02:21 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  100,695,695,360 bytes free
+
+C:\Users\perse\Downloads\practice\folder1>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder1
+
+06/04/2026  02:37 PM    <DIR>          .
+06/04/2026  02:21 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  100,695,691,264 bytes free
+
+C:\Users\perse\Downloads\practice\folder1>cd ..
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:21 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:37 PM    <DIR>          folder1
+06/04/2026  02:21 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               5 Dir(s)  100,695,756,800 bytes free
+
+C:\Users\perse\Downloads\practice>rmdir folder1
+The process cannot access the file because it is being used by another process.
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:21 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:37 PM    <DIR>          folder1
+06/04/2026  02:21 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               5 Dir(s)  100,695,662,592 bytes free
+
+C:\Users\perse\Downloads\practice>remdir folder1
+'remdir' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\perse\Downloads\practice>rmdir folder1
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:38 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:21 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               4 Dir(s)  100,695,560,192 bytes free
+
+C:\Users\perse\Downloads\practice>cd folder2
+
+C:\Users\perse\Downloads\practice\folder2>echo new file >> example.txt
+
+C:\Users\perse\Downloads\practice\folder2>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder2
+
+06/04/2026  02:39 PM    <DIR>          .
+06/04/2026  02:38 PM    <DIR>          ..
+06/04/2026  02:39 PM                11 example.txt
+               1 File(s)             11 bytes
+               2 Dir(s)  100,695,556,096 bytes free
+
+C:\Users\perse\Downloads\practice\folder2>example.txt
+
+C:\Users\perse\Downloads\practice\folder2>cd ..
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:38 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:39 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               4 Dir(s)  100,695,564,288 bytes free
+
+C:\Users\perse\Downloads\practice>rmdir folder2
+The directory is not empty.
+
+C:\Users\perse\Downloads\practice>rmdir /s folder2
+folder2, Are you sure (Y/N)? N
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:38 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:39 PM    <DIR>          folder2
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               4 Dir(s)  100,695,470,080 bytes free
+
+C:\Users\perse\Downloads\practice>rmdir /s /q folder2
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:41 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:21 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               3 Dir(s)  100,693,417,984 bytes free
+
+C:\Users\perse\Downloads\practice>cd folder3
+
+C:\Users\perse\Downloads\practice\folder3>echo no content >> file.txt
+
+C:\Users\perse\Downloads\practice\folder3>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder3
+
+06/04/2026  02:49 PM    <DIR>          .
+06/04/2026  02:41 PM    <DIR>          ..
+06/04/2026  02:49 PM                13 file.txt
+               1 File(s)             13 bytes
+               2 Dir(s)  100,692,836,352 bytes free
+
+C:\Users\perse\Downloads\practice\folder3>cd ..
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:41 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:49 PM    <DIR>          folder3
+               0 File(s)              0 bytes
+               3 Dir(s)  100,692,836,352 bytes free
+
+C:\Users\perse\Downloads\practice>mdkri folder4
+'mdkri' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\perse\Downloads\practice>mkdir folder4
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:50 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:49 PM    <DIR>          folder3
+06/04/2026  02:50 PM    <DIR>          folder4
+               0 File(s)              0 bytes
+               4 Dir(s)  100,692,791,296 bytes free
+
+C:\Users\perse\Downloads\practice>rmdir folder4
+
+C:\Users\perse\Downloads\practice>rmdir folder3
+The directory is not empty.
+
+C:\Users\perse\Downloads\practice>rmdir /s folder3
+folder3, Are you sure (Y/N)? N
+
+C:\Users\perse\Downloads\practice>rmdir /s /q folder3
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:52 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  100,692,840,448 bytes free
+
+C:\Users\perse\Downloads\practice>echo hello >> hello.txt
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:52 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+06/04/2026  02:52 PM                 8 hello.txt
+               1 File(s)              8 bytes
+               2 Dir(s)  100,692,709,376 bytes free
+
+C:\Users\perse\Downloads\practice>del hello.txt
+
+C:\Users\perse\Downloads\practice>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice
+
+06/04/2026  02:53 PM    <DIR>          .
+06/04/2026  01:22 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  100,692,709,376 bytes free
+
+C:\Users\perse\Downloads\practice>mkdir folder1 folder2
+
+C:\Users\perse\Downloads\practice>cd folder1
+
+C:\Users\perse\Downloads\practice\folder1>echo >> notes.txt
+
+C:\Users\perse\Downloads\practice\folder1>dir
+ Volume in drive C is OS
+ Volume Serial Number is BAF1-183D
+
+ Directory of C:\Users\perse\Downloads\practice\folder1
+
+06/04/2026  02:53 PM    <DIR>          .
+06/04/2026  02:53 PM    <DIR>          ..
+06/04/2026  02:53 PM                13 notes.txt
+               1 File(s)             13 bytes
+               2 Dir(s)  100,692,709,376 bytes free
+
+C:\Users\perse\Downloads\practice\folder1>cd ..
+
+C:\Users\perse\Downloads\practice>move folder1/notes.txt folder2
+The system cannot find the path specified.
+
+C:\Users\perse\Downloads\practice>cd folder1
+
+C:\Users\perse\Downloads\practice\folder1>cd ..
+
+C:\Users\perse\Downloads\practice>mov folder1/notes.txt folder2
+'mov' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\perse\Downloads\practice>mv folder1/notes.txt folder2
+'mv' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\perse\Downloads\practice>cd /
+
+C:\>K:
+
+K:\>mkdir "Sharda University"
+
+K:\>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\
+
+05/02/2026  10:49 AM     3,227,622,796 CGME6248.MP4
+04/08/2026  12:26 PM             6,716 Clash_Free_8_to_10.xlsx
+04/07/2026  11:03 PM             1,871 Class 7th import to 8th.csv
+04/07/2026  11:37 PM             1,829 Class 8th for import to 9th.csv
+04/08/2026  11:18 AM             8,325 Class_6_to_10_Timetable for edit.xlsx
+04/09/2026  10:37 AM             5,494 correction Fee_Structure.xlsx
+03/21/2024  12:58 PM    <DIR>          Full Stack Content
+04/07/2026  12:20 PM       222,617,307 hp_laserjet_pro_m1136_aio_5_0_driver.zip
+04/07/2026  12:33 PM       252,413,888 HP_M1130_M1210_MFP_Full_Solution-v20180815-10158769_1.exe
+04/07/2026  10:14 PM             2,000 IMPORT Class 7th.csv
+01/30/2026  03:27 PM    <DIR>          Mern Stack Learning
+04/08/2026  11:17 AM             5,163 New sample timetable class 7th to be upgraded.xlsx
+07/20/2025  04:20 PM    <DIR>          Personal
+01/05/2026  07:34 PM    <DIR>          Product
+04/08/2026  02:17 PM            49,881 Sample for New timetable 6th to 10th.pdf
+06/04/2026  03:06 PM    <DIR>          Sharda University
+08/06/2025  10:31 AM    <DIR>          Shri Sanskritik Kala Manch
+06/01/2026  03:09 PM    <DIR>          SSP School Data
+              11 File(s)  3,702,735,270 bytes
+               7 Dir(s)  22,499,762,176 bytes free
+
+K:\>mkdir Sharda_University
+
+K:\>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\
+
+05/02/2026  10:49 AM     3,227,622,796 CGME6248.MP4
+04/08/2026  12:26 PM             6,716 Clash_Free_8_to_10.xlsx
+04/07/2026  11:03 PM             1,871 Class 7th import to 8th.csv
+04/07/2026  11:37 PM             1,829 Class 8th for import to 9th.csv
+04/08/2026  11:18 AM             8,325 Class_6_to_10_Timetable for edit.xlsx
+04/09/2026  10:37 AM             5,494 correction Fee_Structure.xlsx
+03/21/2024  12:58 PM    <DIR>          Full Stack Content
+04/07/2026  12:20 PM       222,617,307 hp_laserjet_pro_m1136_aio_5_0_driver.zip
+04/07/2026  12:33 PM       252,413,888 HP_M1130_M1210_MFP_Full_Solution-v20180815-10158769_1.exe
+04/07/2026  10:14 PM             2,000 IMPORT Class 7th.csv
+01/30/2026  03:27 PM    <DIR>          Mern Stack Learning
+04/08/2026  11:17 AM             5,163 New sample timetable class 7th to be upgraded.xlsx
+07/20/2025  04:20 PM    <DIR>          Personal
+01/05/2026  07:34 PM    <DIR>          Product
+04/08/2026  02:17 PM            49,881 Sample for New timetable 6th to 10th.pdf
+06/04/2026  03:06 PM    <DIR>          Sharda University
+06/04/2026  03:07 PM    <DIR>          Sharda_University
+08/06/2025  10:31 AM    <DIR>          Shri Sanskritik Kala Manch
+06/01/2026  03:09 PM    <DIR>          SSP School Data
+              11 File(s)  3,702,735,270 bytes
+               8 Dir(s)  22,499,758,080 bytes free
+
+K:\>rmdir Sharda_University
+
+K:\>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\
+
+05/02/2026  10:49 AM     3,227,622,796 CGME6248.MP4
+04/08/2026  12:26 PM             6,716 Clash_Free_8_to_10.xlsx
+04/07/2026  11:03 PM             1,871 Class 7th import to 8th.csv
+04/07/2026  11:37 PM             1,829 Class 8th for import to 9th.csv
+04/08/2026  11:18 AM             8,325 Class_6_to_10_Timetable for edit.xlsx
+04/09/2026  10:37 AM             5,494 correction Fee_Structure.xlsx
+03/21/2024  12:58 PM    <DIR>          Full Stack Content
+04/07/2026  12:20 PM       222,617,307 hp_laserjet_pro_m1136_aio_5_0_driver.zip
+04/07/2026  12:33 PM       252,413,888 HP_M1130_M1210_MFP_Full_Solution-v20180815-10158769_1.exe
+04/07/2026  10:14 PM             2,000 IMPORT Class 7th.csv
+01/30/2026  03:27 PM    <DIR>          Mern Stack Learning
+04/08/2026  11:17 AM             5,163 New sample timetable class 7th to be upgraded.xlsx
+07/20/2025  04:20 PM    <DIR>          Personal
+01/05/2026  07:34 PM    <DIR>          Product
+04/08/2026  02:17 PM            49,881 Sample for New timetable 6th to 10th.pdf
+06/04/2026  03:06 PM    <DIR>          Sharda University
+08/06/2025  10:31 AM    <DIR>          Shri Sanskritik Kala Manch
+06/01/2026  03:09 PM    <DIR>          SSP School Data
+              11 File(s)  3,702,735,270 bytes
+               7 Dir(s)  22,499,758,080 bytes free
+
+K:\>cd Sharda University
+
+K:\Sharda University>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\Sharda University
+
+06/04/2026  03:06 PM    <DIR>          .
+               0 File(s)              0 bytes
+               1 Dir(s)  22,499,758,080 bytes free
+
+K:\Sharda University>mkdir "Unit 1"
+
+K:\Sharda University>cd Unit 1
+
+K:\Sharda University\Unit 1>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\Sharda University\Unit 1
+
+06/04/2026  03:09 PM    <DIR>          .
+06/04/2026  03:09 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  22,499,758,080 bytes free
+
+K:\Sharda University\Unit 1>mkdir "Sprint 1"
+
+K:\Sharda University\Unit 1>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\Sharda University\Unit 1
+
+06/04/2026  03:09 PM    <DIR>          .
+06/04/2026  03:09 PM    <DIR>          ..
+06/04/2026  03:09 PM    <DIR>          Sprint 1
+               0 File(s)              0 bytes
+               3 Dir(s)  22,499,758,080 bytes free
+
+K:\Sharda University\Unit 1>cd Sprint 1
+
+K:\Sharda University\Unit 1\Sprint 1>mkdir "Day 1" "Day 2"
+
+K:\Sharda University\Unit 1\Sprint 1>cd Day 1
+
+K:\Sharda University\Unit 1\Sprint 1\Day 1>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\Sharda University\Unit 1\Sprint 1\Day 1
+
+06/04/2026  03:10 PM    <DIR>          .
+06/04/2026  03:10 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  22,499,758,080 bytes free
+
+K:\Sharda University\Unit 1\Sprint 1\Day 1>echo >> notes.txt
+
+K:\Sharda University\Unit 1\Sprint 1\Day 1>dir
+ Volume in drive K is New Volume
+ Volume Serial Number is 349D-626D
+
+ Directory of K:\Sharda University\Unit 1\Sprint 1\Day 1
+
+06/04/2026  03:11 PM    <DIR>          .
+06/04/2026  03:10 PM    <DIR>          ..
+06/04/2026  03:11 PM                13 notes.txt
+               1 File(s)             13 bytes
+               2 Dir(s)  22,499,758,080 bytes free
+
+K:\Sharda University\Unit 1\Sprint 1\Day 1>
