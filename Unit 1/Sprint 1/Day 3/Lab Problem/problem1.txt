@@ -1,0 +1,7 @@
+IW Assignment
+
+Create the below layout using css and box-model: https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-05-17/Screenshot%202022-05-17%20at%2011.41.52%20AM_528821.png
+
+For refference you can visit this website:- Movies
+
+Image Links:- https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-05-17/images_141444.plain

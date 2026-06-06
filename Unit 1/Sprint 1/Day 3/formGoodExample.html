@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            grid-gap: 10px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Information Form</h2>
+    
+    <form id="studentForm">
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" required>
+
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" required>
+
+        <input type="submit" id="submit">
+    </form>
+
+    <table id="dataTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+   document.getElementById('studentForm').addEventListener('submit', (e)=>{
+    e.preventDefault()
+    // Get form values
+    var studentId = document.getElementById('studentId').value;
+        var studentName = document.getElementById('studentName').value;
+        var course = document.getElementById('course').value;
+
+        // Display data in table
+        var table = document.getElementById('dataTable');
+        var tbody = table.querySelector('tbody');
+
+        var newRow = tbody.insertRow(tbody.rows.length);
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+        cell1.innerHTML = studentId;
+        cell2.innerHTML = studentName;
+        cell3.innerHTML = course;
+
+        // Show the table
+        table.style.display = 'table';
+   })
+</script>
+
+</body>
+</html>
