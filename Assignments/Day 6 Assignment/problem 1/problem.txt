@@ -1,0 +1,47 @@
+Kindly design the layout attched in the folder and make sure following requirements:
+
+You are given two sections, top-section and bottom-section
+
+### Top-section:
+
+Use Grid method to achieve the top-section.
+
+For buttons div use flex method and its properties
+
+Use combinators wherever needed and keep usage of classes and IDs limited.
+
+Apply Media queries: Using Grid
+
+- Large screens : Default
+- Medium screens : 2 cards per row
+- Small screens : 1 card per row
+
+Use this image for all cards - https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp
+
+### Bottom section
+
+Use Grid method to achieve the bottom-section
+
+Use this image for all sections https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg
+
+Use combinators wherever needed and keep usage of classes and IDs limited.
+
+Apply Media queries: Using grid properties
+
+- Large screens : Default
+- Medium screens : 2 cards per row
+- Small screens : 1 card per row
+
+for box shadows you can use https://getcssscan.com/css-box-shadow-examples
+
+You can use any font-family but make sure they are close to given layout.
+
+Write clean code with proper naming and indentation
+
+### Note:
+
+Don't use inline styles.
+
+What to submit:- deployed link (Netlify) https://app.netlify.com/drop
+
+Students who don't follow the rules their evaluation will not be graded and this can lead to 0 scores even if the submission is correct.

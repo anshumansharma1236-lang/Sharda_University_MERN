@@ -1,0 +1,1 @@
+Kindly design the layout attached in the folder and make sure it must be responsive among all devices.
