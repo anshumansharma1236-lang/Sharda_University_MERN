@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure CSS Image Slider</title>
+  <style>
+    /* --- Base Setup --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #0f172a;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* --- Slider Wrapper --- */
+    .slider-frame {
+      width: 800px;
+      height: 450px;
+      border-radius: 12px;
+      overflow: hidden; /* Hides the images that are out of bounds */
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Hide the architecture radio buttons completely */
+    input[name="slide-control"] {
+      display: none;
+    }
+
+    /* --- The Wide Slide Track --- */
+    .slide-track {
+      display: flex;
+      width: 300%; /* Sized to fit exactly 3 slides side-by-side (100% x 3) */
+      height: 100%;
+      /* Transition moves the track smoothly left or right */
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* Individual Slide Layout */
+    .slide {
+      width: 33.333%; /* Each slide takes exactly 1/3rd of the 300% width track */
+      height: 100%;
+      position: relative;
+    }
+
+    /* Placeholder colored boxes representing images */
+    .slide-1 { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+    .slide-2 { background: linear-gradient(135deg, #ec4899, #be185d); }
+    .slide-3 { background: linear-gradient(135deg, #10b981, #047857); }
+
+    /* Center text inside slides */
+    .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .slide-content h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    /* --- THE TRACK MOVEMENT LOGIC --- */
+    /* If Radio 1 is selected, don't move (0%) */
+    #slide1:checked ~ .slide-track { transform: translateX(0%); }
+    
+    /* If Radio 2 is selected, shift left by 1/3rd (-33.333%) */
+    #slide2:checked ~ .slide-track { transform: translateX(-33.333%); }
+    
+    /* If Radio 3 is selected, shift left by 2/3rds (-66.666%) */
+    #slide3:checked ~ .slide-track { transform: translateX(-66.666%); }
+
+
+    /* --- NAVIGATION NAVIGATION CONTROLS (Arrows) --- */
+    .arrow-controls {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Allows clicking through the empty container space */
+    }
+
+    /* Hide all arrows by default */
+    .arrow-controls label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+      pointer-events: auto; /* Re-enables clicking on the arrow itself */
+      opacity: 0;
+      visibility: hidden;
+      transition: background 0.2s, opacity 0.3s;
+    }
+
+    .arrow-controls label:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Position Left/Right directions */
+    .prev { left: 20px; }
+    .next { right: 20px; }
+
+    /* CONDITIONAL LOGIC: Only show relevant arrows based on which slide is active */
+    #slide1:checked ~ .arrow-controls .arr-1,
+    #slide2:checked ~ .arrow-controls .arr-2,
+    #slide3:checked ~ .arrow-controls .arr-3 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    /* --- DOT NAVIGATION (Bottom indicators) --- */
+    .dot-navigation {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+    }
+
+    .dot-navigation label {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    /* Active Dot styling */
+    #slide1:checked ~ .dot-navigation label[for="slide1"],
+    #slide2:checked ~ .dot-navigation label[for="slide2"],
+    #slide3:checked ~ .dot-navigation label[for="slide3"] {
+      background: #ffffff;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider-frame">
+    <input type="radio" name="slide-control" id="slide1" checked>
+    <input type="radio" name="slide-control" id="slide2">
+    <input type="radio" name="slide-control" id="slide3">
+
+    <div class="slide-track">
+      <div class="slide slide-1">
+        <div class="slide-content">
+          <h2>Blue Horizon</h2>
+          <p>Pure CSS transition engine implementation</p>
+        </div>
+      </div>
+      <div class="slide slide-2">
+        <div class="slide-content">
+          <h2>Neon Dreamscape</h2>
+          <p>Zero JavaScript rendering required</p>
+        </div>
+      </div>
+      <div class="slide slide-3">
+        <div class="slide-content">
+          <h2>Emerald Wilderness</h2>
+          <p>Hardware accelerated translations</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow-controls">
+      <label for="slide3" class="prev arr-1">❮</label>
+      <label for="slide2" class="next arr-1">❯</label>
+
+      <label for="slide1" class="prev arr-2">❮</label>
+      <label for="slide3" class="next arr-2">❯</label>
+
+      <label for="slide2" class="prev arr-3">❮</label>
+      <label for="slide1" class="next arr-3">❯</label>
+    </div>
+
+    <div class="dot-navigation">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Looping Banner Slider</title>
+  <style>
+    /* --- Base Setup --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* --- The Visible Frame Window --- */
+    .slider-frame {
+      width: 900px;
+      height: 350px;
+      border-radius: 16px;
+      overflow: hidden; /* Clips out the structural images waiting in line */
+      position: relative;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* --- The Wide Slide Track Engine --- */
+    .slide-track {
+      display: flex;
+      /* We are showing 4 images in sequence total (100% x 4) */
+      width: 400%; 
+      height: 100%;
+      
+      /* KEYFRAME ATTACHMENT:
+         Runs 'autoSlide' script | Takes 16 seconds total | Loops forever | Moves smoothly */
+      animation: autoSlide 16s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* Pause the banner rotation when a user targets it with their mouse cursor */
+    .slider-frame:hover .slide-track {
+      animation-play-state: paused;
+    }
+
+    /* --- Individual Slide Layout --- */
+    .slide {
+      width: 25%; /* Each image takes exactly 1/4th of the 400% track */
+      height: 100%;
+      position: relative;
+    }
+
+    /* Flipkart style colorful background gradient spaces */
+    .slide-1 { background: linear-gradient(135deg, #2874f0, #1e56b3); }
+    .slide-2 { background: linear-gradient(135deg, #00d2ff, #0066ff); }
+    .slide-3 { background: linear-gradient(135deg, #ff9900, #ff5500); }
+    /* Slide 4 MUST match Slide 1 perfectly to hide the loop snap reset */
+    .slide-4 { background: linear-gradient(135deg, #2874f0, #1e56b3); }
+
+    /* Layout content typography wrapper */
+    .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: white;
+    }
+
+    .slide-content h2 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .slide-content p {
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+
+    /* --- THE TIMELINE ENGINE (@keyframes) ---
+       Total Time = 16s. We have 4 slides total (3 unique + 1 clone).
+       Each unique slide gets roughly a 4-second chunk window of the timeline.
+       
+       We want it to stay still (Static View), then slide quickly (Transition View).
+    */
+    @keyframes autoSlide {
+      /* Slide 1 View (0% to 20%) */
+      0%, 20% {
+        transform: translateX(0%);
+      }
+      /* Transitioning to Slide 2 */
+      25%, 45% {
+        transform: translateX(-25%);
+      }
+      /* Transitioning to Slide 3 */
+      50%, 70% {
+        transform: translateX(-50%);
+      }
+      /* Transitioning to Slide 4 (The cloned view of Slide 1) */
+      75%, 95% {
+        transform: translateX(-75%);
+      }
+      /* 100% instantly snaps back to 0% with no transition gap visible */
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    /* --- Visual "Pause on Hover" Notice Indicator --- */
+    .slider-frame::after {
+      content: '⏸ Hover to Pause';
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      color: white;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 20px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider-frame">
+    <div class="slide-track">
+      
+      <div class="slide slide-1">
+        <div class="slide-content">
+          <h2>Big Billion Deals</h2>
+          <p>Minimum 50% Off Everything</p>
+        </div>
+      </div>
+
+      <div class="slide slide-2">
+        <div class="slide-content">
+          <h2>Next-Gen Electronics</h2>
+          <p>No Cost EMI up to 12 Months</p>
+        </div>
+      </div>
+
+      <div class="slide slide-3">
+        <div class="slide-content">
+          <h2>Fashion Clearance</h2>
+          <p>Buy 2 Get 1 Free Today Only</p>
+        </div>
+      </div>
+
+      <div class="slide slide-4">
+        <div class="slide-content">
+          <h2>Big Billion Deals</h2>
+          <p>Minimum 50% Off Everything</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

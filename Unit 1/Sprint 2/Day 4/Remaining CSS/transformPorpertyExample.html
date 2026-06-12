@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .navbar {
+        background-color: rgb(236, 242, 248);
+        padding: 0px 10px;
+      }
+
+      .menu-links {
+        list-style: none;
+        display: flex;
+      }
+      .menu-links a{
+        display: block;
+        text-decoration: none;
+        padding: 20px 24px;
+        font-weight: 800;
+      }
+
+      .has-submenu {
+        position: relative;
+      }
+
+      .sub-menu {
+        list-style: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 200px;
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        border: 1px solid #e2e8f0;
+        padding-left: 0px;
+
+        opacity: 0;
+        visibility: hidden;
+
+         transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+      }
+
+      .sub-menu a:hover{
+        background-color: aqua;
+        color: black;
+      }
+      .level-1 {
+        top: 100%;
+        left: 0;
+      }
+      .level-2 {
+        left: 100%;
+        top: 0%;
+        transform: translateX(2px);
+      }
+
+      .has-submenu > a::after {
+        content: " ▾";
+      }
+
+      .has-submenu .has-submenu > a::after {
+        content: " ▸";
+      }
+
+      .has-submenu:hover > .level-1{
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .has-submenu:hover > .level-2{
+        opacity: 1;
+        visibility: visible;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="menu-links">
+        <li><a href="">Home</a></li>
+        <li class="has-submenu">
+          <a href="">Courses</a>
+          <ul class="sub-menu level-1">
+            <li class="has-submenu">
+              <a href="">Python</a>
+              <ul class="sub-menu level-2">
+                <li><a href="">Python for Beginner</a></li>
+                <li><a href="">Python for Data Science</a></li>
+              </ul>
+            </li>
+            <li><a href="">Java</a></li>
+            <li><a href="">Javascript</a></li>
+            <li><a href="">C</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

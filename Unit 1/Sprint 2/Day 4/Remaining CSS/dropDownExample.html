@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Exmaple</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #navbar{
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .menu-links{
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-links a{
+            text-decoration: none;
+            padding: 20px 24px;
+        }
+
+        .has-submenu{
+            position: relative;
+            border: 1px solid red;
+        }
+
+        .submenu{
+            list-style: none;
+            position: absolute;
+            background-color: rgb(219, 219, 219);
+            border: 1px solid;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .level-1{
+            top: 100%;
+            left: 0;
+        }
+
+        .level-2{
+            top: 100%;
+            right: %;
+        }
+
+
+
+        .submenu a{
+            padding: 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <nav id="navbar">
+            <ul class="menu-links">
+                <li><a href="">Home</a></li>
+
+                <li class="has-submenu"><a href="">Courses</a>
+                    <ul class="submenu level-1">
+                        <li class="has-submenu"><a href="">Python</a>
+                               <ul class="submenu level-2">
+                                <li><a href="">Python for Beginners</a></li>
+                                <li><a href="">Data Science using Python</a></li>
+                                <li><a href="">Django using Python</a></li>
+
+                               </ul>
+                        </li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">Javascript</a></li>
+                        <li><a href="">.Net</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    </nav>
+    
+</body>
+</html>

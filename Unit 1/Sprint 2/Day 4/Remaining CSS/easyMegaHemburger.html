@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Mega Hamburger Menu</title>
+  <style>
+    /* --- Basic Setup --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* --- Header & Toggle Magic --- */
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;
+      z-index: 100; /* Keeps the header row on top */
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* Hide the actual checkbox completely */
+    #menu-checkbox {
+      display: none;
+    }
+
+    /* The Hamburger Button Label */
+    .burger-label {
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+      z-index: 101; /* Sits higher than the dropdown panel */
+      transition: transform 0.3s ease;
+    }
+
+    /* --- The Mega Dropdown Panel --- */
+    .mega-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 100px 40px 40px 40px; /* Big top padding so it sits below header text */
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      z-index: 90;
+
+      /* TRANSITION PROPERTY TRICK: Hide it up above the screen */
+      transform: translateY(-100%);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    /* --- Activation Rule --- */
+    /* When the checkbox is clicked/checked, slide the panel down to view */
+    #menu-checkbox:checked ~ .mega-panel {
+      transform: translateY(0);
+    }
+
+    /* --- The "Mega" Grid Layout --- */
+    .mega-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      /* Creates 3 equal columns automatically */
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 40px;
+    }
+
+    /* Column Typography & Links */
+    .mega-col h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #38bdf8; /* Bright blue heading */
+      margin-bottom: 15px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 8px;
+    }
+
+    .mega-col ul {
+      list-style: none;
+    }
+
+    .mega-col li {
+      margin-bottom: 12px;
+    }
+
+    .mega-col a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.2s ease;
+    }
+
+    .mega-col a:hover {
+      color: #ffffff;
+    }
+
+    /* --- Demo Content --- */
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BrandUX</div>
+    
+    <input type="checkbox" id="menu-checkbox">
+    
+    <label for="menu-checkbox" class="burger-label">☰</label>
+
+    <nav class="mega-panel">
+      <div class="mega-grid">
+        
+        <div class="mega-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">App Development</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+            <li><a href="#">Cloud Hosting</a></li>
+          </ul>
+        </div>
+
+        <div class="mega-col">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">SaaS Dashboard</a></li>
+            <li><a href="#">E-Commerce Plugin</a></li>
+            <li><a href="#">Analytics Kit</a></li>
+            <li><a href="#">UI Component Library</a></li>
+          </ul>
+        </div>
+
+        <div class="mega-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>Easy Mega Hamburger Menu</h1>
+    <p>Click the ☰ icon in the header bar to watch the dashboard block slide down using transitions.</p>
+  </main>
+
+</body>
+</html>

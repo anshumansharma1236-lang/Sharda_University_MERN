@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Only Sidebar</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #navbar{
+            background-color: rgb(41, 41, 83);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Hide checkbox */
+        #menu-toggle{
+            display: none;
+        }
+
+        /* Open Button */
+        .open-btn{
+            background-color: white;
+            color: black;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Sidebar */
+        #sidebar{
+            width: 300px;
+            height: 100vh;
+            background-color: teal;
+
+            position: fixed;
+            top: 0;
+            right: -300px;
+
+            transition: 0.4s ease;
+            padding: 20px;
+        }
+
+        /* Close Button */
+        .close-btn{
+            background-color: white;
+            color: black;
+            padding: 8px 15px;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        /* Open Sidebar */
+        #menu-toggle:checked ~ #sidebar{
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hidden Checkbox -->
+    <input type="checkbox" id="menu-toggle">
+
+    <nav id="navbar">
+        <h2>Logo</h2>
+
+        <!-- Open Button -->
+        <label for="menu-toggle" class="open-btn">
+            Open
+        </label>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+
+        <!-- Close Button -->
+        <label for="menu-toggle" class="close-btn">
+            Close
+        </label>
+
+        <h2 style="margin-top:20px;">Sidebar Menu</h2>
+
+        <ul style="margin-top:20px;">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
