@@ -1,0 +1,61 @@
+HTML? - Defining structure/Body/Dhancha of webpage 
+CSS? - Styling the Structure
+
+
+Have you even seen making car?
+
+First Step: Making structure - HTML
+Second Step: Style the car structure - CSS
+
+
+HTML: It is collection of markup tag/element, there are lots of markup tags or element which are followings:
+
+1. Text Element and Text Formatting
+2. Link Element
+3. List Element
+4. Table Element
+5. Form Element
+6. Multimedia Element
+7. Semantic Element
+8. Meta Element
+
+
+
+Attribute: Additional information about your html tag
+
+Atrribute - Feature?
+
+Mobile - Camera, Calling, Fingerprint scanner, battery, games
+
+Some features are mendatory - charging, calling(recharge)
+
+Optional - Camera, games
+
+<a> </a> - there are lots of attributes, href, taget, tilte, download, rel
+
+mendatory - href
+optional - target and others
+
+
+HTML - DONE:
+
+CSS - PENDING
+
+WHY? -- For Styling(CSS) html(Structure of Web Page)
+
+CSS - Cascading(Rules/Properties) Sytle Sheets
+- CSS is used to style html elements.
+
+Note: CSS is collection of Properties, using these Properties we have style particular html element.
+
+- Type of CSS:
+1. Inline CSS
+2. Internal
+3. External CSS
+
+
+1. Inline CSS:
+   1.a - background color, color property
+        
+
+

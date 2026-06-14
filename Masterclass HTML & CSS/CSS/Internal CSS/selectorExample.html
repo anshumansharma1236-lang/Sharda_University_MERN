@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS or External CSS</title>
+
+    <style>
+
+        /* p{
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+
+        h2{
+            color: blue;
+        } */
+
+        /* input{
+            background-color: red;
+        } */
+
+        /* input[type="text"]{
+            background-color: red;
+            color: white;
+        }
+
+        a[href="www.google.com"]{
+            color: teal;
+        } */
+
+
+        /* id and class selector */
+
+
+        /* #csk-team{
+            background-color: red;
+            padding: 10px;
+        }
+
+        .csk-player{
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+         #rcb-team{
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .rcb-player{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        } */
+
+
+        /* *{
+            margin: 0;
+            background-color: tomato;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+        /* p, h1{
+            color: red;
+        }
+
+        p{
+            color: black;
+        } */
+
+
+        /* Selector Priorities */
+
+        p{
+            margin: 10px;
+        }
+
+        *{
+            margin: 0;
+        }
+
+        .para{
+            margin: 0;
+        }
+
+        #special{
+            margin: 20px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Why Internal CSS:
+    1. Less Maintanablity - Less Readable and harder to main
+    2. Reusability
+    3. Limitation in Global Styling
+
+
+    Selector resolves above problems:
+
+    Why do we use selectors?
+    1. To Use internal or external css
+    2. Solved above problems
+    3. Clean code 
+
+    There are following selectors:
+    1. id
+    2. class
+    3. tag/type
+    4. universal
+    5. group selector
+    -->
+
+
+    <!-- <p style="color: red;padding: 10px; background-color: black;">I'm pagragraph</p>
+    <p style="color: red;">I'm other paragraph</p>
+    <p style="color: red;">I'm other paragraph</p> -->
+
+
+    <!-- Tag/Type Element -->
+
+    <!-- <p>I'm pagaraph</p>
+    <p>I'm pagaraph</p>
+    <p>I'm pagaraph</p>
+    <p>I'm pagaraph</p>
+    <p>I'm pagaraph</p>
+    <p>I'm pagaraph</p>
+
+    <h2>I'm heading two</h2>
+
+    <hr>
+
+    <input type="text" placeholder="Enter Name">
+    <br>
+    <input type="email" placeholder="Enter Email">
+    <br>
+    <a href="www.google.com">Google</a>
+    <br>
+    <a href="#">Normal Text</a> -->
+
+
+    <!-- Id and Class Selector -->
+
+    <!-- I
+    Id:
+    -If you want to give unique style to particular element id
+
+    #id-name
+    
+    Class: 
+    If you want to give common style to html element you can use id
+
+    .class-name
+    -->
+
+    <!-- <div id="csk-team">
+        <div class="csk-player">CSK-Player-1</div>
+        <div class="csk-player">CSK-Player-2</div>
+        <div class="csk-player">CSK-Player-3</div>
+        <div class="csk-player">CSK-Player-4</div>
+        <div class="csk-player">CSK-Player-5</div>
+    </div>
+
+
+    <hr>
+
+    <div id="rcb-team">
+        <div class="rcb-player">RCB-Player-1</div>
+        <div class="rcb-player">RCB-Player-2</div>
+        <div class="rcb-player">RCB-Player-3</div>
+        <div class="rcb-player">RCB-Player-4</div>
+        <div class="rcb-player">RCB-Player-5</div>
+    </div> -->
+
+
+    <!-- Universal Selector
+    Denoted by *
+    - Common style  
+    
+    -->
+
+    <!-- <p>I'm paragraph-4</p>
+    <p>I'm paragraph-4</p>
+    <p>I'm paragraph-4</p>
+
+    <h2>i'm heading</h2> -->
+
+
+    <!-- Group Selector -->
+
+    <!-- <p>I'm paragraph</p>
+    <h1>I'm heading</h1> -->
+
+
+    <!-- 
+    Selector Priorities:
+
+    inline css- 1000
+    id - 100
+    class - 10
+    tag/type - 1
+    * universal - 0
+    -->
+
+    <p class="para">I'm paragraph-1</p>
+    <p style="margin: 0;" id="special" class="para">I'm paragraph-2</p>
+    <p class="para">I'm paragraph-3</p>
+
+
+
+</body>
+</html>
